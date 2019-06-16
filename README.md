@@ -1,2 +1,2 @@
-# Basic-Repository-
+# Basic-Portfolio
 HTML + CSS Portfolio
