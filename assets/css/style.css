@@ -1,19 +1,125 @@
-body{
-    width: 960px;
-    
-}
-h1{
-    padding: 2em;
-    width: 9em;
-    background-color: blue;
-    position: absolute;
+*
+{
+  margin:0;
+  padding:0;
 
 }
-header{
+#master{
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
+    top: 0;
+    margin: 0 auto;
+    max-width: 960px;
+    background-image: url("../images/circles-light.png");
+    border:none;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+    background-image: url("../images/hip-square.png")
+}
+
+h1{
+    margin-top: -1px;
+    height: 50x;
+    padding:1em;
+    margin-left: 40px;
+    color: white;
+    text-align: center;
+    width: 276px;
+    background-color: #4aaaa5;
+    float: left;
+    border:none;
     
-    background-color: aquamarine;
-    height: 200px;
+}
+header{
+    overflow: hidden;
+    font-family: 'Georgia', Times, serif;
+    width: 100%;
+    background-color: #ffffff;
+    height: 70px;
+    min-height: auto;
+    max-height: auto;
+    border-bottom: 1px solid;
+    border-color: #cccccc;  
+
+    
 }
 nav{
-    position: relative;
+    overflow: hidden;
+    font-size: 16px;
+    float: right;
+    margin-top: 15px;
+    margin-bottom: auto;
+    margin-right: 40px;
+}
+
+nav li{
+    
+    display: inline;
+    padding: 0.25em;
+    border-right: 0.5px solid;
+    border-color: #cccccc
+}
+nav a{
+    color: #cccccc;
+    text-decoration: none;
+}
+nav a:hover{
+    color:#868383;
+}
+nav a:active{
+    color: #868383;
+}
+
+article{
+
+    overflow: hidden;
+    margin: 15px 55px 0px 55px;
+    
+}
+/* h2 is the article header */
+h2{
+    margin-top: 15px
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #ffffff;
+    color: #4aaaa5;
+    margin-left: 15px;
+}
+
+main{
+    text-justify: auto;
+    margin: 16px
+    padding: 1em;
+    overflow: auto;
+    border: 0.5px solid;
+    border-color: #dddddd;
+    background-color: #ffffff;
+}
+
+main p{
+    margin: 16px;
+    text-justify: auto;
+}
+
+main img{
+    margin: 16px;
+    float: left;
+}
+
+footer{
+    overflow: hidden;
+    bottom: 0;
+    height: 1rem;
+    background-color: #666666;
+    text-align: center;
+
+}
+footer p{
+    margin-top: 1rem
+
 }
