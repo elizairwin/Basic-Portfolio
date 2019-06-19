@@ -1,17 +1,33 @@
+/*lines 2-7 will refer to all elements in my CSS */
 *
 {
   margin:0;
   padding:0;
-
 }
-#master{
+
+main{
+    background-color:#fff;
+    margin-left: 55px;
+    margin-right: 55px;
+    margin-bottom: 0.5em;
+}
+
+/*lines 18-20 will change large screen background*/
+html{
+    background-color: #F4A6DE;
+}
+
+/*put subtle background image in here*/
+
+#root{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
     top: 0;
     margin: 0 auto;
-    background-image: url("../images/circles-light.png");
-    border:none;
-    padding-left: 5em;
-    
+    background-image: url("../images/papyrus.png");
+    border: none;
+    width: 960px;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
 }
 
 body{
@@ -21,23 +37,24 @@ body{
     font-size: 18px;
     line-height: 150%;
     color: #333;
-    background-image: url("../images/hip-square.png")
 }
 
+/*below refers to my name section*/
+/*learned to adjust margin-top for centering my name*/
 h1{
-    margin-top: -1px;
+    margin-top: -10px;
     height: 50x;
-    padding:1em;
-    margin-left: 40px;
+    padding: 1em;
+    margin-left: 60px;
     color: white;
     text-align: center;
-    width: 276px;
-    background-color: #4aaaa5;
+    width: auto;
+    background-color: grey;
     float: left;
-    border:none;
-
-
+    border: none;
 }
+
+/*below refers to About Me and Name*/
 header{
     overflow: hidden;
     font-family: 'Georgia', Times, serif;
@@ -46,26 +63,30 @@ header{
     height: 70px;
     min-height: auto;
     max-height: auto;
-    border-bottom: 1px solid;
-    border-color: #cccccc;  
-
+    border-bottom: 2px solid;
+    border-color: #cccccc;
 }
+
+/*below refers to main nav section*/
 nav{
     overflow: hidden;
     font-size: 16px;
     float: right;
-    margin-top: 15px;
+    margin-top: 30px;
     margin-bottom: auto;
     margin-right: 40px;
 }
 
+/*below refers to nav list*/
+/*learned to make a border on a portion of an item*/
 nav li{
-    
     display: inline;
     padding: 0.25em;
     border-right: 0.5px solid;
     border-color: #cccccc
 }
+
+/*below are more specific details about my nav*/
 nav a{
     color: #cccccc;
     text-decoration: none;
@@ -77,51 +98,57 @@ nav a:active{
     color: #868383;
 }
 
+/*below refers to my paragraph text*/
+/*adjusted padding to look how i prefer it to look*/
 article{
-
     overflow: hidden;
     margin: 15px 55px 0px 55px;
-    
+    padding: 0.5em;
 }
 
+/*below refers to About Me*/
 h2{
     margin-top: 15px;
     font-family: 'Georgia', Times, Times New Roman, serif;
     background-color: #ffffff;
-    color: #4aaaa5;
+    color: grey;
     margin-left: 15px;
 }
 
+/*below refers to the text in my h2*/
+/*the float makes About Me appear below Eliza Irwin*/
 .about{
-    border-bottom: solid;
-    border-width: 0.01em;
-    border-color: lightgray;
-    padding-bottom: 0.5em;
-    padding-left: 5em;
+    float:left;
 }
 
-article{
-    text-justify: auto;
-    margin: 16px
-    padding: 1em;
-    overflow: auto;
-    border: 0.5px solid;
-    border-color: #dddddd;
-    background-color: #ffffff;
-}
-
+/*below refers to my body text*/
 article p{
     margin: 16px;
     text-justify: auto;
 }
 
+/*below refers to my image of myself*/
 article img{
     margin: 16px;
     float: left;
 }
 
+/*below refers to footer on all pages*/
+/*learned to add padding-bottom to get Copyright where I wanted it*/
+footer{
+    overflow: hidden;
+    bottom: 0;
+    height: 1rem;
+    background-color: #666666;
+    text-align: center;
+    font-size: 10px;
+    position: absolute; 
+    padding-bottom: .9em;
+    left: 0 ; right: 0; bottom: 0; 
+}
+
+/*below refers to Portfolio*/
 article section{
-    
     text-align: center;
     margin-left: 20px;
     padding: 0.2em;   
@@ -136,15 +163,12 @@ main img{
     float: left;
 }
 
-footer{
-    overflow: hidden;
-    bottom: 0;
-    height: 2rem;
-    background-color: #666666;
-    text-align: center;
-
+/*below is for portfolio*/
+.Example{
+    float: left;
+    width: 50px;
+    height: 50px;
 }
-footer p{
-    margin-top: 1rem
 
-}
+.after-Example{
+    clear: left;
