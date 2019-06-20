@@ -17,7 +17,7 @@ html{
     background-color: #F4A6DE;
 }
 
-/*put subtle background image in here*/
+/*put subtle background image in here-able to change*/
 
 #root{
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
@@ -176,6 +176,7 @@ input[type=submit]:hover{
     margin: 1em;
     background-color: white;
 }
+
 .a{
     background-size: 100% 100%;
     background-image: url("../images/abstract.jpeg");
